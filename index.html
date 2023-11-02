@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gelir-Gider</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Aylık Gider Uygulması</h1>
     <div class="container">
-        <div class="input-wrapper">
-            <input id="gelir-giris" required placeholder="gelir giriniz.." type="text">
+      <div class="input-wrapper">
+        <input
+          id="gelir-giris"
+          required
+          placeholder="gelir giriniz.."
+          type="text"
+        />
+        <button id="gelir-ekle">Ekle</button>
+      </div>
     </div>
-</body>
+
+    <form>
+      <h2>Harcama Formu</h2>
+      <div class="content">
+        <div class="harcama-yer">
+          <label>Harcama Alanı</label>
+          <select name="harcama-turu">
+            <option>Gıda</option>
+            <option>Tekstil</option>
+            <option>Faturalar</option>
+            <option>Kira</option>
+            <option>Lüks</option>
+          </select>
+        </div>
+      </div>
+      <div class="harcama-tarih">
+        <label>Tarih</label>
+
+        <input required type="date" />
+      </div>
+      <div class="harcama-miktarı">
+        <label>Harcama Miktarı</label>
+        <input id="harcama-giris" type="number" required />
+      </div>
+      <button id="kaydet">Kaydet</button>
+    </form>
+  </body>
 </html>
